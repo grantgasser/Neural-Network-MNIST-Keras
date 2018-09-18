@@ -12,5 +12,7 @@ The input dimension is 784 (28x28 px images).
 The activation function for each layer is the RELU = max(z, 0), where z = x'w and where x is the data (or the vector of outputs from the previous layer) and w is the vector of weights for that layer. The output layer is softmaxed to get a probability distribution for each example. The model predicts the value with the highest probability. We use the Adam optimizer. Results are much similar to stochastic gradient descent (SGD) in this case. The loss is measured as the categorical cross entropy of the output layer distribution.
 
 #### Notes
-See the [Keras Documentation](https://keras.io/) for specifics.
+The images helps you see a common error. On this run, the model often mistakes confuses 6 and 5. 8 and 5 also seemed to be a common mistake. Re-training the model on your machine might create a model that makes different errors and the last few cells of code may not make sense. 
+See the [Jupyter Notebook documentation](https://jupyter.org/) for more information.
+See the [Keras Documentation](https://keras.io/) for more information.
 
